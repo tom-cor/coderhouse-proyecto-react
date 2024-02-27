@@ -1,0 +1,31 @@
+.navbarContainer{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+.link{
+    width:8rem;
+}
+.linksContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    align-items: center;
+}
+
+.cart{
+    width: 2.5rem;
+}
+
+.badge{
+    background-color: red;
+    padding: .5em;
+    color: white;
+    border-radius: 1px;
+}
+.badgeContainer{
+    display: flex;
+    align-items: center;
+}
