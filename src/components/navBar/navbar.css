@@ -1,3 +1,8 @@
+.logo{
+    width: 5rem;
+    padding: .5em;
+}
+
 .navbarContainer{
     display: flex;
     justify-content: space-around;
@@ -5,12 +10,9 @@
     align-items: center;
 }
 
-.link{
-    width:8rem;
-}
 .linksContainer{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 30%;
     align-items: center;
 }
