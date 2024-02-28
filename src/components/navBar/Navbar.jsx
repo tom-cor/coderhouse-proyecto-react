@@ -1,4 +1,5 @@
 import './navbar.css'
+import CartWidget from '../cartWidget/CartWidget'
 const Navbar = () => {
     return(
         <nav className="navbarContainer">
@@ -9,10 +10,7 @@ const Navbar = () => {
                 <a href="/" className="link">Controladoras</a>
                 <a href="/" className="link">Sensores</a>
             </div>
-            <div className="badgeContainer">
-                <img src="./images/cart.png" alt="Cart" className='cart'/>
-                <span className="badge">11</span>
-            </div>
+            <CartWidget/>
         </nav>
     )
 }
