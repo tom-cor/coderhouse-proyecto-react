@@ -1,8 +1,10 @@
-const ItemListContainer = ({greeting}) => {
+import React, { useEffect, useState } from "react"
+import ItemCount from "../ItemCount/itemCount"
+
+function ItemListContainer({greeting}) {
+
     return(
-        <div>
-            <h1>{greeting}</h1>
-        </div>
+        <ItemCount stock={11}/>
     )
 }
 

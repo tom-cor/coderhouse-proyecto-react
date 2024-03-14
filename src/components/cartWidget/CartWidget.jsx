@@ -1,9 +1,12 @@
+import { Badge } from 'react-bootstrap'
 import './cartWidget.css'
+import {BsCartFill} from 'react-icons/bs'
+
  const CartWidget = () => {
     return(
         <div className="badgeContainer">
-            <img src="./images/cart.png" alt="Cart" className='cart'/>
-            <span className="badge">11</span>
+            <BsCartFill/>
+            <Badge pill bg='primary'>107</Badge>
         </div>
     )
 }
