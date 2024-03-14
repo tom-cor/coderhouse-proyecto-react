@@ -62,5 +62,5 @@ export const getOneProduct = (id) => {
                 resolve(product)
             }
         })
-    }, 2000)
+    }, 5000)
 }
