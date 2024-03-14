@@ -2,7 +2,7 @@ const products = [
     {
         id: "1", 
         name: "E27 Color",
-        stock: 10,
+        stock: 11,
         price: 22000,
         description: "E27 color light bulb",
         image: "../images/products/e27-color.webp",
@@ -11,7 +11,7 @@ const products = [
     {
         id: "2", 
         name: "E27 White Ambiance Fliament",
-        stock: 10,
+        stock: 3,
         price: 12000,
         description: "E27 White Ambiance Filament light bulb",
         image: "../images/products/e27-white_ambiance-filament.webp",
@@ -20,7 +20,7 @@ const products = [
     {
         id: "3", 
         name: "E27 White Ambiance",
-        stock: 10,
+        stock: 7,
         price: 15000,
         description: "E27 White Ambiance light bulb",
         image: "../images/products/e27-white_ambiance.webp",
@@ -29,7 +29,7 @@ const products = [
     {
         id: "4", 
         name: "GU10 Color",
-        stock: 10,
+        stock: 20,
         price: 20000,
         description: "GU10 color light bulb",
         image: "../images/products/gu10-color.webp"

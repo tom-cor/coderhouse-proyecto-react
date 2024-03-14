@@ -1,4 +1,5 @@
 import { Card, Button, ListGroup, ListGroupItem } from "react-bootstrap"
+import ItemCount from "../itemCount/ItemCount"
 
 const ItemDetail = ({product}) => {
     return(
@@ -12,7 +13,7 @@ const ItemDetail = ({product}) => {
                 </ListGroup>
             </Card.Body>
             <Card.Footer>
-                <Button variant="primary">Ver mas...</Button>
+                <ItemCount stock={product.stock}/>
             </Card.Footer>
         </Card>
     )

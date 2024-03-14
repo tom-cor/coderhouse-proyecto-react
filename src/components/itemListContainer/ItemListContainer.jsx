@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react"
-import ItemCount from "../itemCount/ItemCount"
 import { getProducts } from "../../mock/fakeApi"
 import ItemList from "../itemList/ItemList"
 import Container from "react-bootstrap/Container"
@@ -21,7 +20,6 @@ function ItemListContainer({greeting}) {
             <Container>
                 <ItemList products={products}/>
             </Container>
-            <ItemCount stock={11}/>
         </div>
     )
 }
