@@ -3,19 +3,27 @@ import { getProducts } from "../../mock/fakeApi"
 import ItemList from "../itemList/ItemList"
 import Container from "react-bootstrap/Container"
 import { Spinner } from "react-bootstrap"
+import { useParams } from "react-router-dom"
 
 function ItemListContainer({greeting}) {
     const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(false)
+    const {categoryId} = useParams()
 
     useEffect(() => {
         setLoading(true)
         getProducts()
-        .then((res) => setProducts(res))
+        .then((res) => {
+            if(categoryId) {
+                setProducts(res.filter((item) => item.category === categoryId))
+            }
+            else {
+                setProducts(res)
+            }
+        })
         .catch((error) => console.log(error, "Todo mal"))
         .finally(() => setLoading(false))
-    }, [])
-    console.log(products);
+    }, [categoryId])
 
     if(loading) {
         return(
@@ -24,9 +32,15 @@ function ItemListContainer({greeting}) {
             </Spinner>
         )
     }
+    console.log(categoryId)
 
     return(
-        <ItemList products={products}/>
+        <div>
+            {categoryId 
+                ? <h1>{greeting}{categoryId}</h1> 
+                : <h1>{greeting}</h1> }
+            <ItemList products={products}/>
+        </div>
     )
 }
 

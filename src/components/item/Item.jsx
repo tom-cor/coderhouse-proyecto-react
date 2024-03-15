@@ -1,4 +1,5 @@
 import { Card, Button, ListGroup, ListGroupItem } from "react-bootstrap"
+import { Link } from "react-router-dom"
 
 const Item = ({product}) => {
     return(
@@ -9,7 +10,7 @@ const Item = ({product}) => {
                 <Card.Text>${product.price},00</Card.Text>
             </Card.Body>
             <Card.Footer>
-                <Button variant="primary">Ver mas...</Button>
+                <Button as={Link} to={`/item/${product.id}`} variant="primary">Ver mas...</Button>
             </Card.Footer>
         </Card>
     )
