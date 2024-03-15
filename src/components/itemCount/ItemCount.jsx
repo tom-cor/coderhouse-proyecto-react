@@ -23,9 +23,9 @@ const ItemCount = ({stock}) => {
     return(
         <Container>
             <Container>
-                <Button onClick={removeItemFromCount}>-</Button>
+                <Button variant="danger" size="sm" onClick={removeItemFromCount}>-</Button>
                 <span>{count} (max. {stock} u.)</span>
-                <Button onClick={addItemToCount}>+</Button>
+                <Button variant="success" size="sm" onClick={addItemToCount}>+</Button>
             </Container>
             <Button onClick={onAdd} disabled={count === 0}>Añadir al carrito</Button>
         </Container>
