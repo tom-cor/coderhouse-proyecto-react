@@ -27,6 +27,7 @@ function NavbarCustom() {
               <NavDropdown.Item as={NavLink} to="/category/new">Nuevos</NavDropdown.Item>
               <NavDropdown.Item as={NavLink} to="/category/popular">Más vendidos</NavDropdown.Item>
             </NavDropdown>
+            <Nav.Link as={NavLink} to="/form">Formulario</Nav.Link>
             <Nav.Link>
                 <CartWidget/>
             </Nav.Link>

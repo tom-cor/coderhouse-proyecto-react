@@ -7,6 +7,7 @@ import ItemDetailContainer from './components/itemDetailContainer/ItemDetailCont
 
 import { Container } from 'react-bootstrap';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Form from './components/form/Form';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={ <ItemListContainer greeting={"Vamos a iluminar tu vida con los tonos más coloridos!"}/>}/>
         <Route path="/item/:itemId" element={ <ItemDetailContainer/> }/>
         <Route path="/category/:categoryId" element={ <ItemListContainer greeting="Categoria: " />} />
+        <Route path="/form" element={ <Form/> } />
       </Routes>
     </BrowserRouter>
     // <div>
