@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react"
 import { getProducts } from "../../mock/fakeApi"
 import ItemList from "../itemList/ItemList"
-import Container from "react-bootstrap/Container"
-import { Spinner } from "react-bootstrap"
 import { useParams } from "react-router-dom"
+import Loader from "../loader/Loader"
 
 function ItemListContainer({greeting}) {
     const [products, setProducts] = useState([])
@@ -27,12 +26,9 @@ function ItemListContainer({greeting}) {
 
     if(loading) {
         return(
-            <Spinner animation="border" role="status">
-                <span className="visually-hidden">Loading...</span>
-            </Spinner>
+            <Loader/>
         )
     }
-    console.log(categoryId)
 
     return(
         <div>

@@ -1,7 +1,7 @@
  import { useState } from "react"
 import { Button, Container } from "react-bootstrap"
 
-const ItemCount = ({stock}) => {
+const ItemCount = ({stock, onAdd}) => {
     const [count, setCount] = useState(1)
 
     const addItemToCount = () => {
@@ -14,11 +14,6 @@ const ItemCount = ({stock}) => {
             setCount(count - 1)
         }
     }
-    const onAdd = () => {
-        if(count > 0) {
-            console.log(`Añadido al carrito ${count} unidades`)
-        }
-    }
 
     return(
         <Container>
@@ -27,7 +22,7 @@ const ItemCount = ({stock}) => {
                 <span>{count} (max. {stock} u.)</span>
                 <Button variant="success" size="sm" onClick={addItemToCount}>+</Button>
             </Container>
-            <Button onClick={onAdd} disabled={count === 0}>Añadir al carrito</Button>
+            <Button onClick={()=>onAdd(count)} disabled={count === 0}>Añadir al carrito</Button>
         </Container>
     )
 }

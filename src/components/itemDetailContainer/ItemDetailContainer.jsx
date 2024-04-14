@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react"
 import { getOneProduct } from "../../mock/fakeApi"
-import { Card, Button, ListGroup, ListGroupItem } from "react-bootstrap"
 import ItemDetail from "../itemDetail/ItemDetail"
-import { Spinner } from "react-bootstrap"
 import { useParams } from "react-router-dom"
+import Loader from "../loader/Loader"
 
 const ItemDetailContainer = () => {
     const[product, setProduct] = useState([])
@@ -16,14 +15,11 @@ const ItemDetailContainer = () => {
         .then((res) => setProduct(res))
         .catch((error) => console.log(error))
         .finally(() => setLoading(false))
-    }, [])
-    console.log(product)
+    }, [itemId])
 
     if(loading) {
         return(
-            <Spinner animation="border" role="status">
-                <span className="visually-hidden">Loading...</span>
-            </Spinner>
+            <Loader/>
         )
     }
 

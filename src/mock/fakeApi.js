@@ -47,7 +47,7 @@ export const getProducts = () => {
             else {
                 resolve(products)
             }
-        }, 3000)
+        }, 1000)
     })
 }
 
@@ -62,6 +62,6 @@ export const getOneProduct = (id) => {
                 let product = products.find((product) => product.id === id)
                 resolve(product)
             }
-        })
-    }, 5000)
+        }, 1000)
+    })
 }
