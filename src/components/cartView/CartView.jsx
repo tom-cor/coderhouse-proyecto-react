@@ -21,7 +21,7 @@ const CartView = () => {
                 {
                     cart.map((item) => {
                         return(
-                            <tr>
+                            <tr key={item.id}>
                                 <td><img src={item.image} alt={item.name} style={{width:'8rem'}}/></td>
                                 <td>{item.name}</td>
                                 <td>{item.quantity}</td>
