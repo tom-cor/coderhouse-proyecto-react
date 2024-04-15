@@ -10,6 +10,7 @@ import CustomForm from './components/form/Form';
 
 import { CartProvider } from './context/CartContext';
 import Cart from './components/cart/Cart';
+import Checkout from './components/checkout/Checkout';
 
 function App() {
   return (
@@ -20,8 +21,8 @@ function App() {
           <Route path="/" element={ <ItemListContainer greeting={"Vamos a iluminar tu vida con los tonos más coloridos!"}/>}/>
           <Route path="/item/:itemId" element={ <ItemDetailContainer/> }/>
           <Route path="/category/:categoryId" element={ <ItemListContainer greeting="Categoria: " />} />
-          <Route path="/form" element={ <CustomForm/> } />
           <Route path='/cart' element={ <Cart/> }/>
+          <Route path='/checkout' element={ <Checkout/> }/>
         </Routes>
       </BrowserRouter>
     </CartProvider>
