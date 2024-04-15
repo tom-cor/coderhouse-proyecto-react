@@ -1,6 +1,6 @@
 # Philips HUE Store
 
-![ecommerce](https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.m.wikipedia.org%2Fwiki%2FFile%3APhilips_Hue_logo.svg&psig=AOvVaw2LfU-WwxzCwBUOzo22r_iF&ust=1713232971150000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNi3h6aQw4UDFQAAAAAdAAAAABAZ)
+![Philips Hue Logo](c:\Users\Tomi\AppData\Local\Temp\Philips_Hue_logo.svg.png)
 
 Este proyecto consiste en el storefront para una tienda que vende los artefactos luminicos de la linea HUE de Philips.
 
