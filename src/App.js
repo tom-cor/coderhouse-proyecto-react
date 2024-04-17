@@ -15,7 +15,7 @@ import Checkout from './components/checkout/Checkout';
 function App() {
   return (
     <CartProvider>
-      <BrowserRouter>
+      <BrowserRouter basename='/coderhouse-proyecto-react'>
         <NavbarCustom/>
         <Routes>
           <Route path="/" element={ <ItemListContainer greeting={"Vamos a iluminar tu vida con los tonos más coloridos!"}/>}/>
