@@ -1,8 +1,8 @@
 # Philips HUE Store
 
-[![Philips Hue Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Philips_Hue_logo.svg/317px-Philips_Hue_logo.svg.png)]("https://tom-cor.github.io/coderhouse-proyecto-react")
+[![Philips Hue Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Philips_Hue_logo.svg/317px-Philips_Hue_logo.svg.png)](https://tom-cor.github.io/coderhouse-proyecto-react)
 
-[Visita el sitio (hosteado en GHPages)]("https://tom-cor.github.io/coderhouse-proyecto-react")
+[Visita el sitio (hosteado en GHPages)](https://tom-cor.github.io/coderhouse-proyecto-react)
 
 Este proyecto consiste en el storefront para una tienda que vende los artefactos luminicos de la linea HUE de Philips.
 
